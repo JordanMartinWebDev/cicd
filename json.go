@@ -27,5 +27,5 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 		return
 	}
 	w.WriteHeader(code)
-	log.Fatal(w.Write(dat))
+	log.Print(w.Write(dat))
 }
